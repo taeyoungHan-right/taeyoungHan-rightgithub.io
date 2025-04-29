@@ -1,0 +1,94 @@
+body {
+  background: #0f2027;
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+#root {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 0;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #39ff14;
+  text-shadow: 0 0 8px #39ff14, 0 0 20px #00ff99;
+}
+
+.neon {
+  color: #00ff99;
+  text-shadow: 0 0 10px #00ff99, 0 0 30px #39ff14;
+}
+
+.instructions {
+  color: #baffc9;
+  font-size: 1.2em;
+  margin-bottom: 32px;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+.player-area, .ai-area {
+  background: rgba(10, 30, 20, 0.7);
+  border: 3px solid #00ff99;
+  border-radius: 20px;
+  box-shadow: 0 0 30px #00ff99, 0 0 10px #39ff14;
+  padding: 30px 20px;
+  width: 260px;
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-headline .nick {
+  font-size: 1.5em;
+  color: #39ff14;
+  text-shadow: 0 0 8px #39ff14;
+}
+
+.player-video, .avatar {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-top: 16px;
+  border: 2px solid #00ff99;
+  box-shadow: 0 0 20px #00ff99;
+  background: #111;
+}
+
+.messages {
+  margin-top: 40px;
+}
+
+.notice {
+  color: #00ff99;
+  font-size: 1.4em;
+  font-weight: bold;
+  text-shadow: 0 0 10px #39ff14, 0 0 30px #00ff99;
+  background: rgba(20, 40, 20, 0.8);
+  padding: 16px 28px;
+  border-radius: 12px;
+  display: inline-block;
+}
+
+@media (max-width: 700px) {
+  .game-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .player-area, .ai-area {
+    width: 90vw;
+    min-width: 0;
+  }
+}
